@@ -1,0 +1,108 @@
+CI - Continuous Integration
+1.Jenkins - 80% - CloudBees Jenkins
+2.Circle CI
+3.Teamcity
+4.Bambooy
+5. GitLab
+6.Travis CI
+7. CodeSHip
+
+Jenkins
++++++++++++++
+Jenkins is a  CI server which manages and control process such as 
+Plan, Code, Build test, deploy operates and monitor in DevOps Env.
+
+Jenkins:
++++++
+3 Pre-Requists
+1. Java - 1.8 version
+2. Git
+3. Maven - Build Tool ( Ant, Gradle)
+#(root directory)
+
+8080 - default
+
+
+2 Types:
+1. Freestyle job - Manual - UI
+2. Pipeline - Groovy Scripting - CI/CD
+
+Jobs Creation:
+
+
+
+Master & Slave configuration:
+++++++++++++++++++
+
+Jenkins Master:
+
+1.Jenkins Master perform basic installtion and handles task related to build and configuration.
+
+2.schedule builds
+3.they moniter slaves
+4.records and presents the build resulits
+
+Jenkins Slave:
+___________-
+1. Slaves are basically setup to offload builds from the master and disturbute the work loads
+2. They listen to the master request
+3. Slaves can run on variety of OS.(Linux & windows)
+4. They minely execute bild jobs which are dispached by jenkins master instance jobs
+
+Jenkins:
+CI
+
+
+scm:
+git, svn, cvs,TFS 
+
+SVN - Plugin needs to be in the jenkins
+
+
+Master and Slave Configuration:
+___________________________
+
+
+
+Jenkins Pipeline :
+2 type of pipeline jobs
+1. Scripted pipeline - node (old )
+2. Declarative Pipeline - 
+Groovy script we are using declarative pipilene 
+2 ways
+- pipeline script - Groovy script
+- Snippest generator - jenkins jobs dash board
+
+5 Stages:
+++++++++++
+1. Continous Downloading(github)
+2. Continuous Build
+3. Continuous Deployment- automatic/manual deployment
+4. Continuous Test - test
+5. Continuous Delivery - ( final production delivery)
+
+
+Groovy Scripting:
++++++++++++++
+1. Pipeline{
+    agent none 
+       stages{
+          stage('Checkout from git'){
+           agent any
+           stpes{
+           sh 'https://github.com/SobhaReddy/myE2e05Aug.git'
+          }
+         }
+         
+
+
+
+
+
+
+
+
+
+
+
+
